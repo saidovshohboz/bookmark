@@ -1,3 +1,12 @@
+/* CUSTOM-PROPS */
+:root {
+  --blue: #5267df;
+  --red: #fa5959;
+  --text-color: #242a45;
+  --text-color-74: rgba(36, 42, 69, 0.75);
+  --text-color-50: rgba(36, 42, 69, 0.5);
+}
+
 /* FONTS */
 @font-face {
   font-family: "Poppins";
@@ -79,7 +88,7 @@ body {
   line-height: 36px;
   letter-spacing: 0.15px;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color-50 );
 }
 
 img {
