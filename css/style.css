@@ -62,6 +62,7 @@ body {
   letter-spacing: 0.15px;
   background-color: #fff;
   color: var(--text-color-50 );
+  overflow-x: hidden;
 }
 
 img {
@@ -140,10 +141,37 @@ select:-webkit-autofill:focus {
   background-color: var(--red);
 }
 
-.button:hover {
-  border-color: 2px solid var(--red);
+.button--red:hover {
+  border-color: var(--red);
   background-color: #fff;
   color: var(--red);
+}
+
+.button--blue {
+  color: #fff;
+  background-color: var(--blue);
+}
+
+.button--blue:hover {
+  border-color: var(--blue);
+  background-color: #fff;
+  color: var(--blue);
+}
+
+.button--grey {
+  color: var(--text-color);
+  background-color: #f7f7f7;
+}
+
+.button--grey:hover {
+  border-color: #5b6074;
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.button--block {
+  display: block;
+  width: 100%;
 }
 
 .button--site-header {
@@ -152,6 +180,7 @@ select:-webkit-autofill:focus {
   line-height: 17px;
   letter-spacing: 1.5;
 }
+
 
 /* MAIN-CONTENT */
 .main-content {
@@ -215,6 +244,38 @@ sitenav__link:active {
 }
 
 
+/* SECTION */
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.section__info {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 52px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.section__description {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 28px;
+
+}
+
+
 /* SITE-HEADER */
 .site-header {
   text-transform: uppercase;
@@ -233,4 +294,60 @@ sitenav__link:active {
 
 .site-header__sitenav {
   margin-right: 48px;
+}
+
+
+/* HERO */
+.hero {
+  padding-top: 66px;
+  padding-bottom: 105px;
+  background-image: url("../img/blue-pill-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 710px) 200px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero__content {
+  flex-shrink: 0;
+  max-width: 540px;
+  width: 100%;
+  margin-right: 65px;
+  padding-top: 66px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.2px;
+  color: var(--text-color);
+}
+
+.hero__info {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.hero__actions {
+  display: flex;
+}
+
+.hero__actions-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.hero__img {
+  flex-shrink: 0;
+  width: 578px;
+  height: 385px;
+  object-fit: contain;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
