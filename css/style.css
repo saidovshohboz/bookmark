@@ -310,7 +310,7 @@ sitenav__link:active {
 
 
 /* TABS */
-.tabs_list {
+.tabs__list {
   display: flex;
   justify-content: center;
   padding: 0;
@@ -351,7 +351,7 @@ sitenav__link:active {
 
 
 /* TABS-PANELS */
-.tabs__panels {
+.tabpanels {
   padding-top: 75px;
   padding-bottom: 165px;
   background-image: url("../img/blue-pill-bg.svg");
@@ -359,11 +359,11 @@ sitenav__link:active {
   background-position: calc(50% - 585px) 156px;
 }
 
-.tabs__panel {
+.tabpanels__item {
   display: none;
 }
 
-.tabs__panel--active {
+.tabpanels__item--active {
   display: block;
 }
 
