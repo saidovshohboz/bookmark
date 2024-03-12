@@ -801,6 +801,7 @@ sitenav__link:active {
 
 .site-footer__logo {
   margin-right: 63px;
+  flex-shrink: 0;
 }
 
 .site-footer__sitenav {
@@ -853,5 +854,26 @@ sitenav__link:active {
 @media only screen and (max-width: 900px) {
   .button--site-header {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .site-footer__sitenav {
+    margin-left: auto;
+  }
+
+  .site-footer__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .site-footer__logo {
+    margin-bottom: 24px;
+  }
+
+  .site-footer__sitenav .sitenav__list {
+    margin-bottom: 24px;
   }
 }
