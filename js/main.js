@@ -4,15 +4,6 @@ let modifiers = {
   accordionItemOpen: 'accordion__item--open'
 };
 
-let elSiteHeader = document.querySelector('.site-header');
-let elSiteHeaderToggleButton = elSiteHeader.querySelector('.site-header-toggle-button');
-
-if (elSiteHeaderToggleButton) {
-  elSiteHeaderToggleButton.addEventListener('click', () => {
-    elSiteHeader.classList.toggle('site-header--open')
-  });
-}
-
 let elsTabsItem = document.querySelectorAll('.tabs__item');
 let elsTabsPanel = document.querySelectorAll('.tabpanels__item');
 let elsTabLink = document.querySelectorAll('.js-tab-link');
