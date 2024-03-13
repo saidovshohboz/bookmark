@@ -871,6 +871,8 @@ sitenav__link:active {
 
   .site-footer__logo {
     margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .site-footer__sitenav .sitenav__list {
